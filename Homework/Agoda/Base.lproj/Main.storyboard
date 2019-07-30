@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Homework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Y1-yr-wsa">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="307" id="weK-sY-WyH" customClass="Cell" customModule="Homework" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="307"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="weK-sY-WyH" id="c8q-l0-ETu">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="306.66666666666669"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_2922" translatesAutoresizingMaskIntoConstraints="NO" id="Zjg-fZ-Ry9">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="170" id="0W1-ZL-xpg"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HARI Residence &amp; Spa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wv4-m7-BxX">
+                                                    <rect key="frame" x="15" y="178" width="176" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BBU Road, Vihear Chin Village, Svaydangkum, Siem Reap Central Area, Siem Reap, Cambodia, 17252." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCQ-RZ-fUG">
+                                                    <rect key="frame" x="13" y="200" width="349" height="33.666666666666657"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDp-7u-uS4">
+                                                    <rect key="frame" x="15" y="256.33333333333331" width="158" height="30"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" title="Excellent place to stay!"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRx-qD-HSa">
+                                                    <rect key="frame" x="312" y="256.33333333333331" width="39" height="30"/>
+                                                    <state key="normal" title="Heart"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="yRx-qD-HSa" secondAttribute="trailing" constant="24" id="0uQ-0W-3CC"/>
+                                                <constraint firstAttribute="bottom" secondItem="yRx-qD-HSa" secondAttribute="bottom" constant="20.5" id="5VX-TW-l1I"/>
+                                                <constraint firstItem="wDp-7u-uS4" firstAttribute="top" secondItem="pCQ-RZ-fUG" secondAttribute="bottom" constant="22.5" id="Adg-FD-LqE"/>
+                                                <constraint firstItem="wv4-m7-BxX" firstAttribute="leading" secondItem="c8q-l0-ETu" secondAttribute="leading" constant="15" id="E9M-F4-ACn"/>
+                                                <constraint firstItem="pCQ-RZ-fUG" firstAttribute="leading" secondItem="c8q-l0-ETu" secondAttribute="leading" constant="13" id="IUG-uk-r01"/>
+                                                <constraint firstItem="wv4-m7-BxX" firstAttribute="top" secondItem="Zjg-fZ-Ry9" secondAttribute="bottom" constant="8" id="T8w-ed-FbV"/>
+                                                <constraint firstItem="Zjg-fZ-Ry9" firstAttribute="leading" secondItem="c8q-l0-ETu" secondAttribute="leading" id="UrR-8J-8Gx"/>
+                                                <constraint firstItem="Zjg-fZ-Ry9" firstAttribute="top" secondItem="c8q-l0-ETu" secondAttribute="top" id="Xyz-sS-sJL"/>
+                                                <constraint firstItem="pCQ-RZ-fUG" firstAttribute="leading" secondItem="wv4-m7-BxX" secondAttribute="trailing" constant="-178" id="cLe-fP-eWB"/>
+                                                <constraint firstAttribute="trailing" secondItem="wv4-m7-BxX" secondAttribute="trailing" constant="184" id="cVN-Ta-bZa"/>
+                                                <constraint firstItem="wDp-7u-uS4" firstAttribute="leading" secondItem="c8q-l0-ETu" secondAttribute="leading" constant="15" id="gAy-uB-7GP"/>
+                                                <constraint firstAttribute="trailing" secondItem="pCQ-RZ-fUG" secondAttribute="trailing" constant="13" id="n55-sH-26a"/>
+                                                <constraint firstItem="pCQ-RZ-fUG" firstAttribute="top" secondItem="wv4-m7-BxX" secondAttribute="bottom" constant="1" id="rUI-hS-xOK"/>
+                                                <constraint firstItem="yRx-qD-HSa" firstAttribute="leading" secondItem="wDp-7u-uS4" secondAttribute="trailing" constant="139" id="wMV-CX-Pcp"/>
+                                                <constraint firstAttribute="bottom" secondItem="wDp-7u-uS4" secondAttribute="bottom" constant="20.5" id="xqB-xl-Azk"/>
+                                                <constraint firstAttribute="trailing" secondItem="Zjg-fZ-Ry9" secondAttribute="trailing" id="zNw-83-KZu"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="cLe-fP-eWB"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="detail" destination="pCQ-RZ-fUG" id="Hw2-6m-Oi3"/>
+                                            <outlet property="img" destination="Zjg-fZ-Ry9" id="vz5-1j-Zwc"/>
+                                            <outlet property="name" destination="wv4-m7-BxX" id="Wgw-LZ-gAh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="sUG-Vp-Bc5"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="lP5-Lh-auY"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Y1-yr-wsa" secondAttribute="trailing" id="3wA-uq-8jt"/>
+                            <constraint firstItem="4Y1-yr-wsa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="G2I-SF-azc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4Y1-yr-wsa" secondAttribute="bottom" id="OGO-0e-XRm"/>
+                            <constraint firstItem="4Y1-yr-wsa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UjU-QN-ROC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="306" y="154"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_2922" width="2592" height="1728"/>
+    </resources>
+</document>
