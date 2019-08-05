@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TestingVC: UIViewController {
+class HomeFeedVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -24,8 +24,15 @@ class TestingVC: UIViewController {
 //        BuilTheApp(urlString) { (homeFeed: HomeFeed) in
 //            print(homeFeed.user?.name)
 //        }
+//         let urlString = "https://api.letsbuildthatapp.com/youtube/home_feed"
+//        DataAccesSimple.share.fetchData(urlString) { (homeFeed: HomeFeed) in
+//            print(homeFeed.user?.name ?? "")
+//        }
 
     }
+    
+    
+    
     //MARK: fetchHomeFeed -> LetBuildTheApp Not GenericType
     fileprivate func fetchHomeFeed(completion: @escaping (HomeFeed) -> ()){
         let urlString = "https://api.letsbuildthatapp.com/youtube/home_feed"
@@ -71,34 +78,5 @@ class TestingVC: UIViewController {
     */
 }
 
-struct HomeFeed: Codable {
-    let user    :   user?
-    let videos  :   [videos]
-    struct user:Codable {
-        let id      :   Int?
-        let name    :   String?
-        let username:   String?
-    }
-    struct videos: Codable {
-        let id              :   Int?
-        let name            :   String?
-        let link            :   String?
-        let imageUrl        : String?
-        let numberOfViews   : Int?
-        let channel         : channel?
-    }
-}
-struct channel:Codable {
-    let name                :String?
-    let profileImageUrl     : String?
-    let numberOfSubscribers : Int?
-}
-//User
-struct UserTest : Codable {
-    let user    : user?
-    struct user: Codable {
-        let id : Int
-        let name : String
-        let username : String
-    }
-}
+
+

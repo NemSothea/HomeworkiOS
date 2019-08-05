@@ -7,10 +7,14 @@
 //
 
 import Foundation
-struct CategoryVM {
+struct CategoryVM :Decodable {
     
     let categoryVM: CategoryModel?
-    
+    func fetchCategory(urlString: String){
+        DataAccesSimple.shared.fetchData(urlString) { (category: CategoryVM) in
+            
+        }
+    }
     
 }
 

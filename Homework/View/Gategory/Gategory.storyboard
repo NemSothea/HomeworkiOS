@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--CategoryVC-->
         <scene sceneID="gS6-gX-ihn">
             <objects>
-                <viewController id="Gsd-Gs-yZw" sceneMemberID="viewController">
+                <viewController id="Gsd-Gs-yZw" customClass="CategoryVC" customModule="Homework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jsx-sb-Dzr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
